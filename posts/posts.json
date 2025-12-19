@@ -1,0 +1,79 @@
+[
+  {
+    "title": "Intelligent Microscopes: The Future of Biological Imaging",
+    "date": "2024-03-19",
+    "category": "Press release",
+    "image": "assets/images/2024-03-intelligent-microscopes-the-future-of-biological-imaging.png",
+    "url": "posts/2024-03-intelligent-microscopes-the-future-of-biological-imaging.html"
+  },
+  {
+    "title": "We are Community Partners of image.sc!",
+    "date": "2024-03-23",
+    "category": "Website update",
+    "image": "assets/images/2024-04-we-are-community-partners-of-image-sc.png",
+    "url": "posts/2024-04-we-are-community-partners-of-image-sc.html"
+  },
+  {
+    "title": "Camera shows relay race on DNA",
+    "date": "2024-05-27",
+    "category": "Press release",
+    "image": "assets/images/2024-05-camera-shows-relay-race-on-dna.png",
+    "url": "posts/2024-05-camera-shows-relay-race-on-dna.html"
+  },
+  {
+    "title": "EPFL Latsis Symposium on Smart Microscopy",
+    "date": "2024-06-28",
+    "category": "Conferences & events",
+    "image": "assets/images/2024-06-epfl-latsis-symposium-on-smart-microscopy.png",
+    "url": "posts/2024-06-epfl-latsis-symposium-on-smart-microscopy.html"
+  },
+  {
+    "title": "Arkitekt: open-source workflows for smart microscopy",
+    "date": "2024-11-14",
+    "category": "Press release",
+    "image": "assets/images/2024-11-arkitekt-open-source-workflows-for-smart-microscopy.png",
+    "url": "posts/2024-11-arkitekt-open-source-workflows-for-smart-microscopy.html"
+  },
+  {
+    "title": "Imaging 3D cell cultures with optical microscopy",
+    "date": "2025-03-19",
+    "category": "Press release",
+    "image": "assets/images/2025-05-imaging-3d-cell-cultures-with-optical-microscopy.png",
+    "url": "posts/2025-05-imaging-3d-cell-cultures-with-optical-microscopy.html"
+  },
+  {
+    "title": "Smart microscope captures aggregation of misfolded proteins",
+    "date": "2025-08-29",
+    "category": "Press release",
+    "image": "assets/images/2025-08-smart-microscope-captures-aggregation-of-misfolded-proteins.png",
+    "url": "posts/2025-08-smart-microscope-captures-aggregation-of-misfolded-proteins.html"
+  },
+  {
+    "title": "Event-triggered MINFLUX microscopy boosts speed and precision in live-cell imaging",
+    "date": "2025-10-02",
+    "category": "Press release",
+    "image": "assets/images/2025-10-event-triggered-minflux-microscopy-boosts-speed-and-precision-in-live-cell-imaging.png",
+    "url": "posts/2025-10-event-triggered-minflux-microscopy-boosts-speed-and-precision-in-live-cell-imaging.html"
+  },
+  {
+    "title": "Hackaton: AI and ML for Microscopy",
+    "date": "2025-11-05",
+    "category": "Conferences & events",
+    "image": "assets/images/2025-11-hackaton-ai-and-ml-for-microscopy.png",
+    "url": "posts/2025-11-hackaton-ai-and-ml-for-microscopy.html"
+  },
+  {
+    "title": "AI agents advance atomic force microscopy automation: new benchmark reveals capabilities and critical safety concerns",
+    "date": "2025-11-20",
+    "category": "Press release",
+    "image": "assets/images/2025-11-ai-agents-advance-atomic-force-microscopy-automation.png",
+    "url": "posts/2025-11-ai-agents-advance-atomic-force-microscopy-automation.html"
+  },
+  {
+    "title": "DySTrack: A new tool for Dynamic Sample Tracking joins the push to bring smart microscopy to everyday imaging",
+    "date": "2025-12-18",
+    "category": "Press release",
+    "image": "assets/images/2025-12-dystrack-a-new-tool-for-dynamic-sample-tracking-joins-the-push-to-bring-smart-microscopy-to-everyday-imaging.gif",
+    "url": "posts/2025-12-dystrack-a-new-tool-for-dynamic-sample-tracking-joins-the-push-to-bring-smart-microscopy-to-everyday-imaging.html"
+  }
+]

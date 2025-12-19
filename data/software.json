@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Micromanager",
+    "url": "https://imagej.net",
+    "open": true,
+    "programmable": true,
+    "description": "Java-based software built from ImageJ to control microscopes."
+  },
+  {
+    "name": "ImageJ",
+    "url": "https://imagej.net",
+    "open": true,
+    "programmable": true,
+    "description": "Java-based software for image visualization, image analysis, and programing."
+  },
+  {
+    "name": "ZenBlue",
+    "url": "https://www.zeiss.com/microscopy/en/products/software/zeiss-zen.html",
+    "open": false,
+    "programmable": "Partially",
+    "description": "Software to control Zeiss microscopes."
+  },
+  {
+    "name": "ZenBlack",
+    "url": "https://www.micro-shop.zeiss.com/en/us/softwarefinder/software-categories/zen-black/",
+    "open": false,
+    "programmable": "Partially",
+    "description": "Legacy software to control Zeiss microscopes."
+  },
+  {
+    "name": "Napari",
+    "url": "https://napari.org/stable/",
+    "open": true,
+    "programmable": true,
+    "description": "Python-based library and interface for image analysis."
+  },
+  {
+    "name": "Inscoper",
+    "url": "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwic_PKGsdOEAxV2h_0HHSZBCV0QFnoECAoQAQ&url=https%3A%2F%2Fwww.inscoper.com%2F&usg=AOvVaw0OACAErMS1SnHRkgeOUuHw&opi=89978449",
+    "open": true,
+    "programmable": "Partially",
+    "description": "Software for microscope control and automation."
+  },
+  {
+    "name": "µOpenSPIM",
+    "url": "https://openspim.org/micro-openspim",
+    "open": true,
+    "programmable": "Partially",
+    "description": "Interface based on micromanager for OpenSPIM."
+  },
+  {
+    "name": "LasX",
+    "url": "https://www.leica-microsystems.com/products/microscope-software/p/leica-las-x-ls/",
+    "open": false,
+    "programmable": false,
+    "description": "Software to control Leica microscopes."
+  },
+  {
+    "name": "iMSPECTOR",
+    "url": "https://abberior.rocks/superresolution-confocal-systems/imspector/",
+    "open": false,
+    "programmable": true,
+    "description": "Software to control super-resolution Abberior microscope. It can be controlled via Python using SpecPy"
+  }
+]

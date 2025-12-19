@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Microscopy</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="../index.html" class="logo">
+      <img src="../assets/images/logo.png" alt="Smart Microscopy Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../news.html">News</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../education.html">Education</a>
+      <a href="../literature.html">Literature</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="post">
+
+  <h1>Event-triggered MINFLUX microscopy boosts speed and precision in live-cell imaging</h1>
+
+  <img src="../assets/images/2025-10-event-triggered-minflux-microscopy-boosts-speed-and-precision-in-live-cell-imaging.png" alt="Press release" class="post-feature">
+
+  <div class="post-content">
+<p>New research in a preprint by Alvelid et al. (Friedrich Schiller University Jena, Leibniz Institute of Photonic Technology, Jena, Germany; SciLifeLab, KTH Royal Institute of Technology, Stockholm, Sweden) presents a new method for performing smart MINFLUX microscopy. The researchers developed the method to enhance the capabilities and range of applications of MINFLUX.</p>
+<p>MINFLUX is a super-resolution microscopy method with powerful spatial and temporal resolution capabilities in tracking and imaging, but acquisition times spans minutes to hours as a single fluorophore is measured at a time. When measuring live cells, this can quickly become hindering, unless the microscopy is applied in a small region of interest. Ultimately, this limits the potential applications.</p>
+<p>The new work implements event-triggered microscopy with confocal sample monitoring to detect cellular events in living cells through real-time image analysis. At the event sites, MINFLUX tracking is rapidly applied in a sub-micrometer-sized region of interest, exactly where and when it is the most beneficial. The method is controlled using a custom-written and standalone Python widget (based on the ImSwitch widget for event-triggered STED <a href="https://doi.org/10.1038/s41592-022-01588-y">previously developed by Alvelid</a>) that automatically controls a commercial Abberior MINFLUX microscope. The widget is open source and available on GitHub and uses the specpy Python API to microscope control software Imspector, allowing a wide range of users to take advantage of the method.</p>
+<p>In the work, the method was applied to look at three diverse biological applications in living cells: lipid diffusion dynamics were investigated in 2D at caveolae sites; the 3D membrane topography was rapidly measured through lipid tracking at developing endosomes following dynamin accumulation, allowing high precision geometrical measurements of the endosomal heads; and lastly the measurement of 3D membrane topographical and diffusional information simultaneously at multiple event sites allowed to follow HIV budding from an early stage as it develops after Gag accumulation. Overall, the applications prove the generalizability of the method to both follow development on the minutes scale of processes as well as catching second-scale dynamics of cellular events otherwise impossible to acquire through manual control, all while minimizing sample light exposure and maximizing useful data throughput. Importantly, budding endosomes and viruses were imaged in 3D in living cells for the first time, even in physiological conditions.</p>
+  </div>
+
+  <div class="post-meta-box">
+    <h3 style="margin: 0%"><b>More information</b></h3>
+    <p style="margin: 0%;font-size:medium;">For more information on the widget, see the repository on GitHub: <a href="https://github.com/jonatanalvelid/etMINFLUX">https://github.com/jonatanalvelid/etMINFLUX</a>.</p>
+    <p style="margin: 0%;font-size:small;">Jonatan Alvelid, Agnes Koerfer, Christian Eggeling (2025). Event-triggered MINFLUX microscopy: smart microscopy to catch and follow rare events. bioRxiv. 
+    <a href="https://doi.org/10.1101/2025.08.27.672674">https://doi.org/10.1101/2025.08.27.672674</a></p>
+    <small>02-10-2025 | Press release</small>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      Maintained by <a href="mailto:a.ratessoriano@uu.nl" style="color:#666363;">Alfredo Rates</a>.
+      <br>
+      Hosted by the Cell Biology department of Utrecht University.
+    </div>
+
+    <div class="footer-right" style=text-align:right>
+      Check out more at <a href="smartmicroscopy.github.io" style="color:#666363;">smartmicroscopy.github.io</a>
+      <br>
+      smartmicroscopy.org is possible thanks to Euro-Bioimaging and <a href ="http://eurobioimaging.nl/" style="color:#666363;">NL-BioImaging</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

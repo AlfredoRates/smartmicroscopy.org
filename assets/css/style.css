@@ -1,0 +1,388 @@
+:root {
+  --text-color: #666363;
+  --header-color: #636363;
+  --light-gray: #f2f2f2;
+  --border-color: #ddd;
+  --link-color: #b03060;
+  --link-hover-color: #8f244c;
+}
+
+body {
+  margin: 0;
+  font-family: "Source Sans 3", sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  background: hsl(0, 1%, 99%);
+}
+
+header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 1rem 0;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 300;
+}
+
+nav a:hover {
+  color: var(--link-hover-color);
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+p {
+  font-family: inherit;
+  font-size: 1.3rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  border: 1px solid var(--border-color);
+  padding: 0.6rem;
+  vertical-align: top;
+}
+
+th {
+  background: var(--light-gray);
+  text-align: left;
+}
+
+input[type="search"] {
+  margin-top: 0.5rem;
+  padding: 0.4rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+footer {
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.site-header {
+  background: var(--light-gray);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 90px;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.4rem;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--header-color);
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: var(--link-color);
+}
+
+.site-footer {
+  background: var(--light-gray);
+  border-top: 1px solid var(--border-color);
+  margin-top: 3rem;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+}
+
+.news-item  {
+  align-items: center;
+}
+
+/* ===== Contact ===== */
+
+.contact-form {
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: #0055aa;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #003f80;
+}
+
+/* ===== Posts ===== */
+
+.post-feature {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  margin: 1.5rem 0;
+}
+
+.post-meta-box {
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* ===== Slideshow ===== */
+
+
+.slideshow {
+  position: relative;
+  max-width: 60%;
+  margin: 2rem 10rem;
+}
+
+.slide-arrow {
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.slides-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+
+/* Title overlay */
+.slide-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.45);
+  color: rgb(199, 199, 199);
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  pointer-events: none;
+}
+
+.slide-title a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Arrows */
+.slide-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+}
+
+.slide-arrow.left {
+  left: 10px;
+}
+
+.slide-arrow.right {
+  right: 10px;
+}
+
+.slide-arrow:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Dots */
+.slide-dots {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.slide-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-dot.active {
+  background: #555;
+}
+
+.resources-nav {
+  position: fixed;
+  top: 20%; /* below header */
+  left: 10%;
+  transform: translateX(-25%); /* aligns with content edge */
+  width: 25%;
+  z-index: 100;
+}
+
+.resources-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: rgba(55, 55, 75, 0.432); /* semi-transparent */
+  padding: 0.1rem 1.5rem;
+  margin: 0rem 0 1.5rem 0;
+  border-radius: 6px;
+}
+
+.resources-nav li {
+  margin-bottom: 0rem;
+}
+
+.resources-nav a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffffe0;
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.resources-nav a:hover {
+  text-decoration: underline;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.news-item {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+/* Mobile: single column */
+@media (max-width: 800px) {
+  .news-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+#loading-indicator {
+  text-align: center;
+  padding: 1rem;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+#searchInput {
+  width: 100%;
+  max-width: 600px;
+  font-size: 1.2em;
+  padding: 8px 12px;
+  box-sizing: border-box; /* include padding in width */
+  margin-bottom: 12px; /* space below the search box */
+}

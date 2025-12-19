@@ -1,0 +1,184 @@
+[
+  {
+    "name": "Microscope Automation",
+    "url": "https://github.com/aics-int/microscope_automation/",
+    "description": "Microscope Automation is an automation software for a variety of popular microscopes, such as Zeiss and 3i.",
+    "language": "Python",
+    "status": "Inactive, stable"
+  },
+  {
+    "name": "ImSwitch",
+    "url": "https://github.com/ImSwitch/ImSwitch",
+    "description": "ImSwitch is a software solution in Python that aims at generalizing microscope control for flexible control of multiple microscope modalities.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "Adaptive-imaging",
+    "url": "https://github.com/wl-stepp/adaptive-imaging",
+    "description": "Adaptive Imaging is a set of tools for adaptive imaging. The overall idea of this project is to adapt the imaging speed of a microscope to the presence of events in the images.",
+    "language": "Python",
+    "status": "Inactive, stable"
+  },
+  {
+    "name": "Event-driven acquisition (EDA)",
+    "url": "https://github.com/LEB-EPFL/eda_plugin",
+    "description": "event-driven-acquisition is a Python library for advanced microscope control routines to enable acquisitions to react to specific biological events of interest.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "Microscope Gym",
+    "url": "https://github.com/BiAPoL/microscope-gym",
+    "description": "Microscope Gym is a new microscope control software under development.",
+    "language": "Python",
+    "status": "Active, unstable"
+  },
+  {
+    "name": "Zeiss OAD",
+    "url": "https://github.com/zeiss-microscopy/OAD",
+    "description": "Open Application Development (OAD) for Zen BLUE software to control Zeiss microscopes.",
+    "language": "Multiple",
+    "status": "Active, stable"
+  },
+  {
+    "name": "Acquifer API",
+    "url": "https://github.com/Luxendo/Acquifer-Python-API",
+    "description": "Acquifier API is a python package providing utilitary functionalities when working with an ACQUIFER Imaging Machine.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "smartLLSM",
+    "url": "https://github.com/nel-lab/smartLLSM",
+    "description": "smartLLSM is a pipeline for Smart Lattice Light Sheet Microscopy to image rare and complex cellular events.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "Navigate",
+    "url": "https://github.com/TheDeanLab/navigate",
+    "description": "Navigate is an open source Python package for control of light-sheet microscopes. It allows for easily reconfigurable hardware setups and automated acquisition rotuines.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "MicroMator",
+    "url": "https://gitlab.inria.fr/InBio/Public/micromator",
+    "description": "MicroMator is an open and flexible software for reactive microscopy.",
+    "language": "Python",
+    "status": "Inactive, stable"
+  },
+  {
+    "name": "Pycromanager",
+    "url": "https://github.com/micro-manager/pycro-manager",
+    "description": "pycromanager is a Python library for customized microscope hardware control and integration with image processing. It works together with Micro-manager and Micro-magellan, or can be used as a standalone backend system for controlling microscope hardware.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "pymmcore-plus",
+    "url": "https://github.com/pymmcore-plus/pymmcore-plus",
+    "description": "pymmcore-plus is sa library to control Micosocpes. It extends pymmcore with a number of features designed to facilitate working with Micro-manager in pure python/C environments.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "Python Microscopy Environment (PYME)",
+    "url": "https://github.com/python-microscopy/python-microscopy",
+    "description": "PYME is an open-source application suite for light microscopy acquisition, data storage, visualization, and analysis. It offers a particularly comprehensive set of features for single-molecule localization techniques, but also supports many other modalities.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "AutoPilot",
+    "url": "https://github.com/MicroscopeAutoPilot/autopilot",
+    "description": "AutoPilot is an open-source project that hosts the general algorithm for the assessment of image quality, an automated computational method for 3D mapping, and data-driven optimization of the system of light-sheet microscopes.",
+    "language": "Java",
+    "status": "Inactive, stable"
+  },
+  {
+    "name": "ShrimPy",
+    "url": "https://github.com/czbiohub-sf/shrimPy",
+    "description": "shrimPy is a pythonic framework for high-throughput smart microscopy and high-performance analysis.",
+    "language": "Ptython",
+    "status": "Active, stable"
+  },
+  {
+    "name": "Python Microscope",
+    "url": "https://github.com/python-microscope/microscope",
+    "description": "Python's microscope package is a free and open source library for microscope control aimed at those who are building their own microscopes or want programmatic control for microscope experiments.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "qi23lab-OPM",
+    "url": "https://github.com/QI2lab/OPM",
+    "description": "qi2lab-OPM I a library for control, reconstruction, and analysis code for multiplexed imaging using oblique plane microscopy (OPM).",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "exa-spim-control",
+    "url": "https://github.com/AllenNeuralDynamics/exa-spim-control",
+    "description": "exa-spim-control is a program for acquisition control for the exaSPIM microscope system.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "DiSPIM",
+    "url": "https://github.com/AllenNeuralDynamics/iSpim-control",
+    "description": "DiSPIM is a program for the control of the Dual Inverted Selective Plane Illumination Microscopy (DiSPIM) from ASI.",
+    "language": "Python",
+    "status": "Inactive, stable"
+  },
+  {
+    "name": "OpenSimView",
+    "url": "https://github.com/royerlab/opensimview",
+    "description": "OpenSimView is an open access repository provides all information for building a 2 detection and 2 illumination simultaneous multiview microscope.",
+    "language": "Java",
+    "status": "Inactive, stable"
+  },
+  {
+    "name": "mesoSPIM-control",
+    "url": "https://github.com/mesoSPIM/mesoSPIM-control",
+    "description": "mesoSPIM-control is n image acquisition software for mesoscale selective plane illumination microscope (mesoSPIM) light-sheet microscopes.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "leicaautomator",
+    "url": "https://github.com/arve0/leicaautomator",
+    "description": "Years-old attempt to automate Leica SPX microscopes",
+    "language": "Python",
+    "status": "Inactive, stable"
+  },
+  {
+    "name": "leicaimage",
+    "url": "https://github.com/MartinHjelmare/leicaimage",
+    "description": "Handle Leica Matrix Screener experiment images. The leicaimage library is a modified version of the \"leicaexperiment\" library.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "ExEngine",
+    "url": "https://github.com/micro-manager/ExEngine",
+    "description": "Toolkit for building microscopy hardware control. ExEngine is a flexible intermediary which enables mixing and matching of components from different frameworks within a single application.",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "LumaViewPro",
+    "url": "https://github.com/EtalumaSupport/LumaViewPro",
+    "description": "Open source control interface for Etaluma microscopes",
+    "language": "Python",
+    "status": "Active, stable"
+  },
+  {
+    "name": "SpecPy",
+    "url": "https://github.com/AbberiorInstruments/ImspectorDocs/tree/master/docs/specpy",
+    "description": "Python utility interface to control iMSPECTOR software, making smart microscopy in Abberior's microscopes possible.",
+    "language": "Python",
+    "status": "Inactive, stable"
+  }
+]

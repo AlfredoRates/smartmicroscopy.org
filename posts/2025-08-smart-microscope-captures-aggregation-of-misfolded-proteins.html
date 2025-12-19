@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Microscopy</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="../index.html" class="logo">
+      <img src="../assets/images/logo.png" alt="Smart Microscopy Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../news.html">News</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../education.html">Education</a>
+      <a href="../literature.html">Literature</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="post">
+
+  <h1>Smart microscope captures aggregation of misfolded proteins</h1>
+
+  <img src="../assets/images/2025-08-smart-microscope-captures-aggregation-of-misfolded-proteins.png" alt="Press release" class="post-feature">
+
+  <div class="post-content">
+<p>The accumulation of misfolded proteins in the brain is central to the progression of neurodegenerative diseases like Huntington's, Alzheimer's and Parkinson's. But to the human eye, proteins that are destined to form harmful aggregates don't look any different than normal proteins. The formation of such aggregates also tends to happen randomly and relatively rapidly - on the scale of minutes. The ability to identify and characterize protein aggregates is essential for understanding and fighting neurodegenerative diseases.</p>
+<p>Now, using deep learning, EPFL researchers have developed a 'self-driving' imaging system that leverages multiple microscopy methods to track and analyze protein aggregation in real time – and even anticipate it before it begins. In addition to maximizing imaging efficiency, the approach minimizes the use of fluorescent labels, which can alter the biophysical properties of cell samples and impede accurate analysis.</p>
+<p>"This is the first time we have been able to accurately foresee the formation of these protein aggregates,” says recent EPFL PhD graduate Khalid Ibrahim. "Because their biomechanical properties are linked to diseases and the disruption of cellular function, understanding how these properties evolve throughout the aggregation process will lead to fundamental understanding essential for developing solutions.”</p>
+<p>Ibrahim has published this work in <a href="https://doi.org/10.1038/s41467-025-60912-0">Nature Communications</a> with Aleksandra Radenovic, <a href="https://www.epfl.ch/labs/lben/">head of the Laboratory of Nanoscale Biology</a> in the School of Engineering, and Hilal Lashuel in the School of Life Sciences, in collaboration with Carlo Bevilacqua and Robert Prevedel at the European Molecular Biology Laboratory in Heidelberg, Germany. The project is the result of a longstanding collaboration between the Lashuel and Radenovic labs that unites complementary expertise in neurodegeneration and advanced live-cell imaging technologies. "This project was born out of a motivation to build methods that reveal new biophysical insights, and it is exciting to see how this vision has now borne fruit,” Radenovic says.</p>
+<h2>Witnessing the birth of a protein aggregate</h2>
+<p>In their first collaborative effort, led by Ibrahim, the team developed a deep learning algorithm <a href="https://actu.epfl.ch/news/ai-unlocks-new-insights-in-neurodegenerative-disea/">that was able to detect mature protein aggregates</a> when presented with unlabeled images of living cells. The new study builds on that work with an image classification version of the algorithm that analyzes such images in real time: when this algorithm detects a mature protein aggregate, it triggers a Brillouin microscope, which analyzes scattered light to characterize the aggregates' biomechanical properties like elasticity.</p>
+<p>Normally, the slow imaging speed of a Brillouin microscope would make it a poor choice for studying rapidly evolving protein aggregates. But thanks to the EPFL team's AI-driven approach, the Brillouin microscope is only switched on when a protein aggregate is detected, speeding up the entire process while opening new avenues in smart microscopy.</p>
+<p>"This is the first publication that shows the impressive potential for self-driving systems to incorporate label-free microscopy methods, which should allow more biologists to adopt rapidly evolving smart microscopy techniques,” Ibrahim says.</p>
+<p>Because the image classification algorithm only targets mature protein aggregates, the researchers still needed to go further if they wanted to catch aggregate formation in the act. For this, they developed a second deep learning algorithm and trained it on fluorescently labelled images of proteins in living cells. This 'aggregation-onset' detection algorithm can differentiate between near-identical images to correctly identify when aggregation will occur with 91% accuracy. Once this onset is spotted, the self-driving system again switches on Brillouin imaging to provide a never-before-seen window into protein aggregation. For the first time, the biomechanics of this process can be captured dynamically as it occurs.</p>
+<p>Lashuel emphasizes that in addition to advancing smart microscopy, this work has important implications for drug discovery and precision medicine. "Label-free imaging approaches create entirely new ways to study and target small protein aggregates called toxic oligomers, which are thought to play central causative roles in neurodegeneration,” he says. "We are excited to build on these achievements and pave the way for drug development platforms that will accelerate more effective therapies for neurodegenerative diseases.”</p>
+  </div>
+
+  <div class="post-meta-box">
+    <h3 style="margin: 0%"><b>More information</b></h3>
+    <p style="margin: 0%;font-size:medium;">Written by Celia Luterbacher for <a href="https://actu.epfl.ch/news">EPFL news</a>. Read the original article <a href="https://actu.epfl.ch/news/smart-microscope-captures-aggregation-of-misfold-2/">here</a>. </p>
+    <p style="margin: 0%;font-size:small;">Self-Driving Microscopy Detects the Onset of Protein Aggregation and Enables Intelligent Brillouin Imaging. Khalid A. Ibrahim, Camille Cathala, Carlo Bevilacqua, Lely Feletti, Robert Prevedel, Hilal A. Lashuel and Aleksandra Radenovic. 
+    <a href="https://doi.org/10.1038/s41467-025-60912-0 ">https://doi.org/10.1038/s41467-025-60912-0 </a></p>
+    <p style="margin: 0%;font-size:small;">Ibrahim, K.A., Grußmayer, K.S., Riguet, N. et al. Label-free identification of protein aggregates using deep learning. Nat Commun 14, 7816 (2023). 
+    <a href="https://doi.org/10.1038/s41467-023-43440-7">https://doi.org/10.1038/s41467-023-43440-7</a></p>
+    <small>29-08-2025 | Press release</small>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      Maintained by <a href="mailto:a.ratessoriano@uu.nl" style="color:#666363;">Alfredo Rates</a>.
+      <br>
+      Hosted by the Cell Biology department of Utrecht University.
+    </div>
+
+    <div class="footer-right" style=text-align:right>
+      Check out more at <a href="smartmicroscopy.github.io" style="color:#666363;">smartmicroscopy.github.io</a>
+      <br>
+      smartmicroscopy.org is possible thanks to Euro-Bioimaging and <a href ="http://eurobioimaging.nl/" style="color:#666363;">NL-BioImaging</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

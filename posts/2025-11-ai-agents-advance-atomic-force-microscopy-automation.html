@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Microscopy</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="../index.html" class="logo">
+      <img src="../assets/images/logo.png" alt="Smart Microscopy Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../news.html">News</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../education.html">Education</a>
+      <a href="../literature.html">Literature</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="post">
+
+  <h1>AI agents advance atomic force microscopy automation: new benchmark reveals capabilities and critical safety concerns</h1>
+
+  <img src="../assets/images/2025-11-ai-agents-advance-atomic-force-microscopy-automation.png" alt="Press release" class="post-feature">
+
+  <div class="post-content">
+<p>New research published in Nature Communications by Mandal et al. (Indian Institute of Technology Delhi, India) presents a comprehensive evaluation of large language model agents for automating atomic force microscopy. The researchers developed AILA (Artificially Intelligent Lab Assistant) and AFMBench to assess the potential and limitations of AI-powered laboratory automation.</p>
+<p>Atomic force microscopy (AFM) is a powerful materials characterization technique with applications across nanotechnology, materials science, and biology, but it requires significant expertise to operate effectively. Traditional approaches demand manual parameter optimization, careful experimental design, and expert interpretation of results. When conducting complex experimental workflows, this expertise requirement can become a bottleneck, limiting throughput and accessibility. Ultimately, this restricts AFM's broader adoption in research and industry.</p>
+<p>The new work implements a multi-agent AI framework that can interpret natural language queries and autonomously orchestrate the complete AFM workflow—from experimental design and instrument calibration to imaging, data analysis, and decision-making. AILA employs specialized agents coordinated by a central planner: the AFM Handler Agent controls experimental operations while the Data Handler Agent manages analysis and optimization. The system is evaluated using AFMBench, a suite of 100 real-laboratory tasks covering the full spectrum of microscopy operations, providing a rigorous benchmark for AI agents in experimental contexts.</p>
+<p>In the work, the researchers evaluated four leading language models (GPT-4o, GPT-3.5, Claude-3.5-sonnet, and Llama-3.3) across AFMBench and demonstrated AILA's capabilities through five real-world experiments: automated microscope calibration through PID parameter optimization; high-resolution detection of graphene step edges at the atomic scale requiring sophisticated baseline correction; load-dependent friction measurements on highly oriented pyrolytic graphite with automated data plotting; identification and layer counting of graphene flakes on silicon substrates through autonomous feature detection; and analysis of indentation marks to infer indenter geometry. Overall, the applications prove the potential of AI agents for laboratory automation while revealing critical limitations: GPT-4o achieved 65% success on benchmark tasks but struggled with code generation errors; models excelling at materials science knowledge performed poorly in hands-on tasks, showing domain knowledge doesn't translate to experimental capabilities; and critically, AI agents sometimes “sleepwalk”—deviating from instructions to perform unintended and potentially dangerous actions, raising serious safety concerns for autonomous laboratory deployment. The multi-agent architecture significantly outperformed single-agent approaches, though both remained sensitive to instruction phrasing. Importantly, this work establishes the first comprehensive benchmark for evaluating AI laboratory assistants and provides essential safety insights for the emerging field of self-driving laboratories.</p>
+  </div>
+
+  <div class="post-meta-box">
+    <h3 style="margin: 0%"><b>More information</b></h3>
+    <p style="margin: 0%;font-size:medium;">For the complete benchmark suite and code, see <a href="https://github.com/M3RG-IITD/AILA">the repository on GitHub</a>. </p>
+    <p style="margin: 0%;font-size:small;">Indrajeet Mandal, et al. (2025) Evaluating large language model agents for automation of atomic force microscopy. Nat Comm 16 9104. 
+    <a href="https://doi.org/10.1038/s41467-025-64105-7">https://doi.org/10.1038/s41467-025-64105-7</a></p>
+    <small>19-03-2025 | Press release</small>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      Maintained by <a href="mailto:a.ratessoriano@uu.nl" style="color:#666363;">Alfredo Rates</a>.
+      <br>
+      Hosted by the Cell Biology department of Utrecht University.
+    </div>
+
+    <div class="footer-right" style=text-align:right>
+      Check out more at <a href="smartmicroscopy.github.io" style="color:#666363;">smartmicroscopy.github.io</a>
+      <br>
+      smartmicroscopy.org is possible thanks to Euro-Bioimaging and <a href ="http://eurobioimaging.nl/" style="color:#666363;">NL-BioImaging</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

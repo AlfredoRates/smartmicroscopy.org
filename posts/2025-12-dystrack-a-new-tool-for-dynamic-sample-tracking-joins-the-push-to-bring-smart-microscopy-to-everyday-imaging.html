@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Microscopy</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="../index.html" class="logo">
+      <img src="../assets/images/logo.png" alt="Smart Microscopy Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../news.html">News</a>
+      <a href="../resources.html">Resources</a>
+      <a href="../education.html">Education</a>
+      <a href="../literature.html">Literature</a>
+      <a href="../contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="post">
+
+  <h1>DySTrack: A new tool for Dynamic Sample Tracking joins the push to bring smart microscopy to everyday imaging</h1>
+
+  <img src="../assets/images/2025-12-dystrack-a-new-tool-for-dynamic-sample-tracking-joins-the-push-to-bring-smart-microscopy-to-everyday-imaging.gif" alt="Press release" class="post-feature">
+
+  <div class="post-content">
+<p>Smart microscopy promises adaptive, sample-aware imaging but has seen limited adoption in biology labs because it often requires bespoke hardware, vendor-specific solutions, or complex software frameworks. A new python-based open-source software tool, DySTrack (Dynamic Sample Tracking), now joins recent efforts to change this by making smart microscopy more accessible on standard commercial microscopes.</p>
+<p>DySTrack, developed by Zimeng Wu, Jonas Hartmann, and colleagues at University College London, enables automated live tracking of moving samples without replacing existing acquisition software. Instead of re-engineering microscope control, DySTrack works in tandem with vendor software, allowing researchers to keep using familiar interfaces to configure acquisition settings while adding custom image analysis pipelines into the acquisition loop.</p>
+<p>In a typical experiment, DySTrack continuously monitors high-speed prescans, runs user-defined python image analysis pipelines, and feeds the resulting coordinates back to the microscope to trigger stage movements and high-quality main scans. This loop allows automatic adjustment of the field of view to follow moving, drifting, or developing samples, reducing manual intervention and increasing experimental robustness.</p>
+<p>DySTrack is designed to be lightweight and easy to adapt across different microscopes, avoiding vendor lock-in. Out-of-the-box integrations are provided for Zeiss LSM880 and LSM980 systems, as well as Nikon microscopes supporting JOBS, with support for further systems expected in future updates.</p>
+<p>To help users get started, DySTrack includes example pipelines for several challenging biological applications, including tracking of the migrating zebrafish lateral line primordium and of the regressing chick Hensen's node. These examples serve as templates that can be readily adapted to other organisms, samples and imaging setups.</p>
+<p>DySTrack is fully open-source, with comprehensive documentation and a modular design that encourages community contributions and experimentation. The developers position it as a low-barrier entry point for researchers and facilities interested in smart microscopy, particularly those who seek flexibility without committing to custom hardware or large software ecosystems. The tool is described in a recent bioRxiv preprint, and the code is available on GitHub.</p>
+<p>With DySTrack, smart microscopy moves another step closer to becoming an everyday tool in the biologist's increasingly automated tool belt.</p>
+  </div>
+
+  <div class="post-meta-box">
+    <h3 style="margin: 0%"><b>More information</b></h3>
+    <p style="margin: 0%;font-size:medium;">The code is freely available on <a href="https://github.com/WhoIsJack/DySTrack">GitHub</a> and a comprehensive documentation can be found <a href="https://whoisjack.github.io/DySTrack">online</a>. Community contributions via GitHub are welcome!</p>
+    <p style="margin: 0%;font-size:small;">Z. Wu, O. Voiculescu, A. Mongera, R. Mayor, M. Wong, and J. Hartmann (2025): DySTrack: a modular smart microscopy tool for live tracking of dynamic samples on modern commercial microscopes. bioRxiv.
+    <a href="https://doi.org/10.64898/2025.12.02.691816">https://doi.org/10.64898/2025.12.02.691816</a></p>
+    <small>18-12-2025 | Press release</small>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      Maintained by <a href="mailto:a.ratessoriano@uu.nl" style="color:#666363;">Alfredo Rates</a>.
+      <br>
+      Hosted by the Cell Biology department of Utrecht University.
+    </div>
+
+    <div class="footer-right" style=text-align:right>
+      Check out more at <a href="smartmicroscopy.github.io" style="color:#666363;">smartmicroscopy.github.io</a>
+      <br>
+      smartmicroscopy.org is possible thanks to Euro-Bioimaging and <a href ="http://eurobioimaging.nl/" style="color:#666363;">NL-BioImaging</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

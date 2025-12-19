@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Microscopy</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="index.html" class="logo">
+      <img src="assets/images/logo.png" alt="Smart Microscopy Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="news.html">News</a>
+      <a href="resources.html">Resources</a>
+      <a href="education.html">Education</a>
+      <a href="literature.html">Literature</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <h1>Literature</h1>
+  <p>his page synchronizes an open Zotero library, which you can access here. Anything missing? Let us know in the imagesc forum or contact us!</p>
+
+  <section class="literature-controls">
+    <select id="typeFilter">
+      <option value="">All types</option>
+    </select>
+
+    <select id="categoryFilter">
+      <option value="">All categories</option>
+    </select>
+
+    <select id="entriesPerPage">
+      <option value="10">10</option>
+      <option value="50">50</option>
+      <option value="100">100</option>
+    </select>
+  </section>
+
+  <input
+  type="text"
+  id="searchInput"
+  placeholder="Search literature..."
+  style="width: 100%; max-width: 600px; font-size: 1.2em; padding: 8px;"
+/>
+
+  <table class="literature-table">
+    <thead>
+      <tr>
+        <th>Author</th>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Link</th>
+        <th>Categories</th>
+      </tr>
+    </thead>
+    <tbody id="literatureBody">
+      <!-- JS injects rows -->
+    </tbody>
+  </table>
+
+  <div id="loading-indicator" style="display:none;">
+    Loading literature…
+  </div>
+
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      Maintained by <a href="mailto:a.ratessoriano@uu.nl" style="color:#666363;">Alfredo Rates</a>.
+      <br>
+      Hosted by the Cell Biology department of Utrecht University.
+    </div>
+
+    <div class="footer-right" style=text-align:right>
+      Check out more at <a href="smartmicroscopy.github.io" style="color:#666363;">smartmicroscopy.github.io</a>
+      <br>
+      smartmicroscopy.org is possible thanks to Euro-Bioimaging and <a href ="http://eurobioimaging.nl/" style="color:#666363;">NL-BioImaging</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/literature.js" defer></script>
+
+</body>
+</html>
