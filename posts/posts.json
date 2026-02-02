@@ -80,7 +80,14 @@
     "title": "New look smartmicroscopy.org!",
     "date": "2026-01-12",
     "category": "Website update",
-    "image": "assets/images/2026-01-new-look-smartmicroscopy-org.pngf",
+    "image": "assets/images/2026-01-new-look-smartmicroscopy-org.png",
     "url": "posts/2026-01-new-look-smartmicroscopy-org.html"
+  },
+  {
+    "title": "AI-guided electron microscopy accelerates brain mapping",
+    "date": "2026-02-02",
+    "category": "Press release",
+    "image": "assets/images/2026-02-AI-guided-electron-microscopy-accelerates-brain-mapping.png",
+    "url": "posts/2026-02-AI-guided-electron-microscopy-accelerates-brain-mapping.html"
   }
 ]
