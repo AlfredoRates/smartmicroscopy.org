@@ -22,7 +22,7 @@ function loadTable(jsonPath, tableBodyId, searchInputId, renderRow) {
 
 /* Repositories */
 loadTable(
-  "/data/repositories.json",
+  "/data/repositories.json?v=${Date.now()}",
   "repositories-table",
   "repo-search",
   repo => {
@@ -39,7 +39,7 @@ loadTable(
 
 /* Software */
 loadTable(
-  "/data/software.json",
+  "/data/software.json?v=${Date.now()}",
   "software-table",
   "software-search",
   sw => {
