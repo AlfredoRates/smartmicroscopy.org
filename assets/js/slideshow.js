@@ -1,7 +1,7 @@
 let currentSlide = 0;
 let slides = [];
 
-fetch("/posts/posts.json?v=${Date.now()}")
+fetch(`/posts/posts.json?v=${Date.now()}`)
   .then(r => r.json())
   .then(posts => {
     slides = posts

@@ -1,4 +1,4 @@
-fetch("posts/posts.json?v=${Date.now()}")
+fetch(`/posts/posts.json?v=${Date.now()}`)
   .then(r => r.json())
   .then(posts => {
     const container = document.getElementById("newsContainer");

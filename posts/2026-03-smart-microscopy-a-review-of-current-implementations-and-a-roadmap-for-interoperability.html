@@ -1,0 +1,70 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Microscopy</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="../index" class="logo">
+      <img src="../assets/images/logo.png" alt="Smart Microscopy Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="../index">Home</a>
+      <a href="../news">News</a>
+      <a href="../resources">Resources</a>
+      <a href="../education">Education</a>
+      <a href="../literature">Literature</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="post">
+
+  <h1>Smart microscopy: a review of current implementations and a roadmap for interoperability</h1>
+
+  <img src="../assets/images/2026-03-smart-microscopy-a-review-of-current-implementations-and-a-roadmap-for-interoperability.png" alt="Press release" class="post-feature">
+
+  <div class="post-content">
+<p>Smart microscopy is a rapidly growing field, but it is not yet a discipline in its own right. Researchers working on adaptive imaging workflows often belong to different communities, from cell biology to optics to computer science, and rarely meet at the same conferences. Even basic terminology is not standardized, resources and implementations are scattered, and much of the practical know-how remains hidden inside individual labs or proprietary systems. This fragmentation slows progress and limits adoption.</p>
+<p>A new review article in Methods in Microscopy, authored by over 30 colleagues from the <a href="https://smartmicroscopy.github.io">Smart Microscopy Working Group</a> (SMWG), sets out to address this. The group surveys the current landscape of smart microscopy, collects and compares the technical details of different approaches, and proposes a framework for interoperability.</p>
+<p>To organize the wide range of existing strategies, the article groups smart microscopy approaches into four categories based on the intent behind their decision-making logic: event-driven (responding to detected biological events such as cell division or rare phenotypes), outcome-driven (steering experiments toward a desired biological outcome, for example using optogenetics), quality-driven (optimizing imaging parameters to reduce phototoxicity, correct aberrations, or improve signal-to-noise), and information-driven (maximizing the information gained per acquisition, for instance by directing the microscope to undersampled regions). These categories are not mutually exclusive but serve as a shared vocabulary to describe what is currently a very heterogeneous field. Alongside these use cases, the article compiles both academic and commercial implementations, covering the technical details of a variety of hardware setups and software strategies.</p>
+<p>On the interoperability side, the article identifies a set of concrete barriers. The specificity of hardware setups, the lack of standardized microscope control APIs and metadata formats, and vendor lock-in make it difficult for labs to scale smart microscopy workflows across platforms. Incompatible software, closed firmware, and proprietary file formats complicate automation and integration, hindering reproducibility and forcing researchers to recreate similar solutions for each unique setup. The authors also point to cultural and organizational challenges: misaligned incentives between academia, industry, and infrastructure providers, limited public forums for exchange between academic and commercial developers, and academic incentive structures that do not sufficiently reward the collective development and maintenance of open-source tools.</p>
+<p>The article outlines a vision for an interoperable smart microscopy ecosystem based on a modular architecture, where standardized experiment descriptions (e.g. useq-schema) and open data formats (e.g. OME-Zarr) allow the integration of diverse microscopes, analysis tools, and user interfaces. In this vision, core components such as segmentation, tracking, and experiment logic are decoupled from specific hardware, enabling reuse across platforms, flexible feedback-driven acquisition strategies, and cross-platform reproducibility.</p>
+<p>Realizing this will require joint effort. The article concludes with a call to action directed at academic labs, industry partners, and institutions including funders and publishers, to jointly invest in open standards, shared resources, and long-term sustainability of community tools. Over the next year, the SMWG plans to focus on three priorities: publishing baseline interoperability specifications, curating an open and evolving collection of shared implementations, datasets, and workflows, and organizing community events to facilitate dialogue across academia, industry, and research infrastructures.</p>
+  </div>
+
+  <div class="post-meta-box">
+    <h3 style="margin: 0%"><b>More information</b></h3>
+    <p style="margin: 0%;font-size:medium;">The article is accompanied by an <a href="https://smartmicroscopy.github.io/implementations.html">overview of current smart microscopy implementations</a> (both academic and commercial, including hardware and software compatibility matrices) maintained as a living, community-editable resource on the SMWG website. Contributions can be submitted via the associated <a href="https://github.com/SmartMicroscopy/smartmicroscopy.github.io">GitHub repository</a> or by contacting the authors.</p>
+    <p style="margin: 0%;font-size:small;">Hinderling, L., Heil, H.S., Rates, A., Seidel, P., Kesavan, P.S., Gunkel, M., Diederich, B., Guilbert, T., Torro, R., Bouchareb, O., Demeautis, C., Martin, C., Brooks, S., Sisamakis, E., Grandgirard, E., Mutterer, J., Oatman, H., Toettcher, J., Rogov, A., Antonovaite, N., Johansson, K., Ahnlinde, J.K., André, O., Nordenfelt, Philip, Nordenfelt, Pontus, Pfander, C., Reymann, J., Lambert, T., Cosenza, M.R., Korbel, J.O., Pepperkok, R., Kapitein, L.C., Pertz, O., Norlin, N., Halavatyi, A. & Camacho, R. (2026). Smart microscopy: current implementations and a roadmap for interoperability. Methods in Microscopy. 
+    <a href="https://doi.org/10.1515/mim-2025-0029">https://doi.org/10.1515/mim-2025-0029</a></p>
+    <small>17-03-2026 | Press release</small>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      Maintained by <a href="mailto:a.ratessoriano@uu.nl" style="color:#666363;">Alfredo Rates</a>.
+      <br>
+      Hosted by the Cell Biology department of Utrecht University.
+    </div>
+
+    <div class="footer-right" style=text-align:right>
+      Check out more at <a href="smartmicroscopy.github.io" style="color:#666363;">smartmicroscopy.github.io</a>
+      <br>
+      smartmicroscopy.org is possible thanks to Euro-Bioimaging and <a href ="http://eurobioimaging.nl/" style="color:#666363;">NL-BioImaging</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
