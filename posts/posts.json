@@ -96,5 +96,12 @@
     "category": "Press release",
     "image": "assets/images/2026-03-smart-microscopy-a-review-of-current-implementations-and-a-roadmap-for-interoperability.png",
     "url": "posts/2026-03-smart-microscopy-a-review-of-current-implementations-and-a-roadmap-for-interoperability"
+  },
+  {
+    "title": "Keeping the tail in frame: LiLiTTool, a tracking software for smart light-sheet microscopy",
+    "date": "2026-09-03",
+    "category": "Press release",
+    "image": "assets/images/2026-09-keeping-the-tail-in-frame-lilittool-a-tracking-software-for-smart-light-sheet-microscopy.webp",
+    "url": "posts/2026-09-keeping-the-tail-in-frame-lilittool-a-tracking-software-for-smart-light-sheet-microscopy"
   }
 ]

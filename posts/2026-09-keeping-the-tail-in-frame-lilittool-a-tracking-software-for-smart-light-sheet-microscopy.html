@@ -1,0 +1,80 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Microscopy</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="../index" class="logo">
+      <img src="../assets/images/logo.png" alt="Smart Microscopy Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="../index">Home</a>
+      <a href="../news">News</a>
+      <a href="../resources">Resources</a>
+      <a href="../education">Education</a>
+      <a href="../literature">Literature</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="post">
+
+  <h1>Keeping the tail in frame: LiLiTTool, a tracking software for smart light-sheet microscopy</h1>
+
+  <video class="post-feature" style="object-fit: contain; max-height: 450px; background: #000;" autoplay loop muted playsinline poster="../assets/images/2026-09-keeping-the-tail-in-frame-lilittool-a-tracking-software-for-smart-light-sheet-microscopy-poster.jpg">
+    <source src="../assets/images/2026-09-keeping-the-tail-in-frame-lilittool-a-tracking-software-for-smart-light-sheet-microscopy.mp4" type="video/mp4">
+    <img src="../assets/images/2026-09-keeping-the-tail-in-frame-lilittool-a-tracking-software-for-smart-light-sheet-microscopy.webp" alt="Press release" class="post-feature">
+  </video>
+  <p style="font-size:1rem;margin-top:-1rem;text-align:center;">LiLiTTool following the tail tip of a zebrafish embryo: the red dots are the grid of points tracked by CoTracker3, the red box is the region of interest that the stage follows. Credit: Clément Helsens, EPFL.</p>
+
+  <div class="post-content">
+<p>Over a 30-hour time-lapse, the tip of a zebrafish embryo's tail travels more than twice the width of the microscope's field of view. Keeping it in frame means moving the stage to follow it, and until recently that failed often enough to cost the Timing, Oscillations, Patterns Lab at EPFL more than a third of its long-term acquisitions. LiLiTTool, an open-source tool developed in the lab, is built to stop that happening.</p>
+<p>The lab led by Andrew Oates studies the zebrafish segmentation clock, the oscillator that sets the rhythm at which the embryo lays down the segments of its future spine. Reading that rhythm means watching the same tissue continuously for more than a day. The previous setup coupled the stage to an intensity-based centre-of-mass estimate, which proved brittle: a transient bright artefact could pull the estimate off target, tissue reshaping shifted the signal distribution, and the whole approach depended on having a suitable fluorescent reporter in the first place. "People were having trouble tracking the tail tip properly, so I said let's write a proper tracking tool to do it", says first author Clément Helsens, a former CERN particle physicist who describes his role in the lab as "a facilitator".</p>
+<p>Rather than tracking an intensity signal, LiLiTTool tracks textures. The user draws a box around the feature they care about; the software scatters a regular grid of points inside it and hands them to CoTracker3, a transformer network trained to follow arbitrary points through a video. No specific structure has to be segmented first: any textured pixels will do. Because CoTracker3 follows all the points jointly rather than one by one, it can hold on to points that are briefly hidden. Their collective displacement is fitted to a transformation that moves the region of interest, and the stage follows; the Z axis is handled separately by a classical centre-of-mass registration. An optional object detector trained on the tail tip can be fused with the tracker to correct accumulated drift. With that combination, the team held the tail tip in frame for 30 hours, even through heat-shock-induced contractions, when only imaging dim autofluorescence signal, or when a second embryo wandered into the field of view. The tracking approach also shows promise beyond zebrafish: working offline on already-acquired 2D movies, the team also followed tardigrade heads through strong non-rigid deformation, C. elegans spindle poles through the fast trajectories of cell division, and individual cells from the Cell Tracking Challenge, none of it requiring organism-specific retraining.</p>
+<p>Microscope acquisition PCs are often old machines with undersized GPUs, so inference can be streamed to a GPU server over the network. In practice, three microscopes, two in the lab and one in EPFL's fish facility, all point at the same node. At 4x downsampling, processing a time point takes about 0.6s, which fits comfortably inside the five-minute acquisition interval.</p>
+
+<figure style="margin: 2rem auto; max-width: 800px; text-align: center;">
+  <img src="../assets/images/2026-09-keeping-the-tail-in-frame-lilittool-a-tracking-software-for-smart-light-sheet-microscopy-viventis-ls1.jpg" alt="A Viventis LS1 Live light-sheet microscope on a bench next to its acquisition PC" style="width: 100%;">
+  <figcaption style="font-size: 1rem; margin-top: 0.5rem;">The Viventis LS1 Live light-sheet microscope in the TOP-lab at EPFL, used for long-term imaging of zebrafish embryos and development of the LiLiTTool tracking system.</figcaption>
+</figure>
+
+<p>LiLiTTool was built around the Viventis LS1 Live light-sheet microscope and lives inside that microscope's own software as a script plugin. A user double-clicks a desktop shortcut, points the tool at the acquisition folder, draws a box, saves it and starts tracking. No coding required. Optimising for one well-characterised system has a payoff: "If you have an LS1, installing it from scratch takes about half an hour, and it works out of the box", Helsens says. He is now adapting it to other instruments, which is harder than it sounds. All the tool needs as input are images written per position and a trigger announcing that a position has been acquired, but every new microscope has its quirks: for example one widely used commercial microscope control software will not let the stage move once an acquisition has started, which complicates closed loop control. The alternative now in development bypasses the vendor software and drives the hardware through pymmcore, a Python interface to the open-source microscope control software Micro-Manager.</p>
+<p>More smart microscopy projects are under way. In one, the microscope scans a well plate, a model sorts the cells into singlets and doublets, and the software works out the route through the fewest positions that satisfies the user's criteria: a given number of cells, a set proportion of doublets, a minimum spacing between them. All of these projects begin the same way. "I'm basically listening to the people in the lab, to everybody who needs some help with computation", Helsens says. Putting someone with a technical background within earshot of the daily challenges of wet-lab biologists turns out to be a fairly reliable way of developing tools that address a real need.</p>
+  </div>
+
+  <div class="post-meta-box">
+    <h3 style="margin: 0%"><b>More information</b></h3>
+    <p style="margin: 0%;font-size:medium;">LiLiTTool is open source. The code and installation instructions are available on <a href="https://github.com/EPFL-TOP/lightsheet-live-tracking-tool">GitHub</a>.</p>
+    <p style="margin: 0%;font-size:small;">Helsens, C., Pili, F., Vasquez, E., Aymanns, F., Tinevez, J.-Y., Andò, E., &amp; Oates, A. C. (2026). Real-Time Multi-Position and Multi-ROI Tracking with LiLiTTool for Smart Light-Sheet Microscopy in Growing Samples [Preprint]. openRxiv.
+    <a href="https://doi.org/10.64898/2026.04.03.715281">https://doi.org/10.64898/2026.04.03.715281</a></p>
+    <small>03-09-2026 | Press release</small>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      Maintained by <a href="mailto:a.ratessoriano@uu.nl" style="color:#666363;">Alfredo Rates</a>.
+      <br>
+      Hosted by the Cell Biology department of Utrecht University.
+    </div>
+
+    <div class="footer-right" style=text-align:right>
+      Check out more at <a href="smartmicroscopy.github.io" style="color:#666363;">smartmicroscopy.github.io</a>
+      <br>
+      smartmicroscopy.org is possible thanks to Euro-Bioimaging and <a href ="http://eurobioimaging.nl/" style="color:#666363;">NL-BioImaging</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
