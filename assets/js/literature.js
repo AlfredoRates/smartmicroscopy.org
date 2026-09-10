@@ -5,6 +5,16 @@ let items = [];
 let filteredItems = [];
 let collectionMap = {};
 
+// NEW: sort state
+let sortColumn = null;      // "author" | "title" | "year"
+let sortDirection = 1;      // 1 = ascending, -1 = descending
+
+// NEW: which parsed field each sortable column should sort on
+const SORT_KEYS = {
+  author: "authorSort",
+  title: "titleSort",
+  year: "yearSort",
+};
 
 //////// FETCH LITERATURE
 async function fetchLiterature() {
@@ -13,6 +23,7 @@ async function fetchLiterature() {
   items = await response.json();
   items = items.filter(i => i.data.itemType !== "attachment");
   filteredItems = items;
+  applySort(filteredItems); // NEW: keep any active sort applied to the fresh data
   populateCategoryFilters(items);
   renderTable();
   showLoading(false);
@@ -36,20 +47,78 @@ function parseItem(item) {
 
   const authors = (data.creators || [])
     .map(c => c.lastName);
-    console.log(authors)
-    const authorText =
-        authors.length > 3
-            ? `${authors[0]} et al.`
-            : authors.map(a => a).join(", ");
+
+  const authorText =
+    authors.length > 3
+      ? `${authors[0]} et al.`
+      : authors.map(a => a).join(", ");
+
+  const year = data.date ? data.date.substring(0, 4) : "";
 
   return {
     author: authorText,
+    // NEW: sortable keys, independent of how the cell is displayed
+    authorSort: (authors[0] || "").toLowerCase(),
+    titleSort: (data.title || "").toLowerCase(),
+    yearSort: year ? parseInt(year, 10) || 0 : 0,
+
     title: data.title || "",
-    year: data.date ? data.date.substring(0, 4) : "",
+    year: year,
     url: data.url || "",
     tags: (data.tags || []).map(t => t.tag),
     collections: item.data.collections || []
   };
+}
+
+// NEW: sort a list of raw Zotero items in place, according to current sortColumn/sortDirection
+function applySort(list) {
+  if (!sortColumn) return list;
+  const key = SORT_KEYS[sortColumn];
+
+  return list.sort((a, b) => {
+    const va = parseItem(a)[key];
+    const vb = parseItem(b)[key];
+    if (va < vb) return -1 * sortDirection;
+    if (va > vb) return 1 * sortDirection;
+    return 0;
+  });
+}
+
+// NEW: called when a sortable header is clicked
+function sortItems(column) {
+  if (sortColumn === column) {
+    sortDirection *= -1; // clicking the same column again flips direction
+  } else {
+    sortColumn = column;
+    sortDirection = 1;
+  }
+
+  applySort(filteredItems);
+  renderTable();
+  updateSortIndicators();
+}
+
+// NEW: adds a ▲ / ▼ marker to whichever header is currently active
+function updateSortIndicators() {
+  document.querySelectorAll("th[data-sort]").forEach(th => {
+    th.classList.remove("sort-asc", "sort-desc");
+    const label = th.dataset.sortLabel || th.textContent.replace(/[▲▼]\s*$/, "").trim();
+    th.dataset.sortLabel = label; // remember the clean label so arrows don't stack up
+    if (th.dataset.sort === sortColumn) {
+      th.classList.add(sortDirection === 1 ? "sort-asc" : "sort-desc");
+      th.textContent = `${label} ${sortDirection === 1 ? "▲" : "▼"}`;
+    } else {
+      th.textContent = label;
+    }
+  });
+}
+
+// NEW: wire up click handlers on any <th data-sort="..."> header
+function initSortableHeaders() {
+  document.querySelectorAll("th[data-sort]").forEach(th => {
+    th.style.cursor = "pointer";
+    th.addEventListener("click", () => sortItems(th.dataset.sort));
+  });
 }
 
 //////// RENDER TABLE
@@ -123,6 +192,7 @@ function applySearchFilter() {
     return haystack.includes(searchTerm);
   });
 
+  applySort(filteredItems); // NEW: keep the active sort after filtering
   renderTable();
 }
 
@@ -151,6 +221,7 @@ function applyFilters() {
     return true;
   });
 
+  applySort(filteredItems); // NEW: keep the active sort after filtering
   renderTable();
 }
 
@@ -176,6 +247,8 @@ document.getElementById("searchInput")
 document.addEventListener("DOMContentLoaded", async () => {
   showLoading(true);
 
+  initSortableHeaders(); // NEW
+
   await fetchCollections();
   populateTypeFilter();
 
@@ -192,6 +265,7 @@ function loadFromCache() {
   if (cached) {
     items = JSON.parse(cached);
     filteredItems = items;
+    applySort(filteredItems); // NEW
     populateTypeFilter(items);
     populateCategoryFilters(items);
     renderTable();
