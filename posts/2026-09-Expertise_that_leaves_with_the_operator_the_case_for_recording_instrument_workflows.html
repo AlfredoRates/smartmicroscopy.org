@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart Microscopy</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav-container">
+    <a href="../index" class="logo">
+      <img src="../assets/images/logo.png" alt="Smart Microscopy Logo">
+    </a>
+
+    <div class="nav-links">
+      <a href="../index">Home</a>
+      <a href="../news">News</a>
+      <a href="../resources">Resources</a>
+      <a href="../education">Education</a>
+      <a href="../literature">Literature</a>
+      <a href="../contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main class="post">
+
+  <h1>Expertise that leaves with the operator: the case for recording instrument workflows</h1>
+
+  <img src="../assets/images/2026-09-Expertise_that_leaves_with_the_operator_the_case_for_recording_instrument_workflows.png" alt="Press release" class="post-feature">
+
+  <div class="post-content">
+  <p>A Nature Methods Comment by Henry Pinkard and Nils Norlin argues that the commands, responses and metadata passing through instrument control software are training data for AI systems that could operate instruments at expert level, and describes what would be required to record them at scale.</p>
+
+  <p>Henry Pinkard (UC Berkeley and Lund University) and Nils Norlin (Lund University) have published a Comment in Nature Methods on the experimental data that instrument software produces and then discards. The article, &ldquo;The missing data for intelligent scientific instruments&rdquo;, appears in the September 2026 issue and belongs to the journal&rsquo;s Focus on AI in biological research.</p>
+
+  <p>Every acquisition session generates a sequence of commands, instrument responses and metadata: a focus offset, an exposure change, an image, a state change returned by the controller. The authors argue that these sequences contain the operator&rsquo;s decision-making in a form that is already digital, and that most instruments store only the final results, while the workflows that produced them are lost. A methods section compresses the same work into a summary, and the skills involved in recognizing that an intervention is needed, tuning parameters and adapting a protocol during acquisition are not represented there.</p>
+
+  <p>Current smart microscopy implementations rely on hard-coded rules or are written for one specific situation. Even though they already operate at speeds and scales beyond human capability, they have limited capacity to plan an experiment or to diagnose a failed acquisition. Workflow data is what a model would need in order to learn those capabilities.</p>
+
+  <p>The Comment lists five open challenges, one of which is software: most instruments were never designed for workflow capture. Here the authors highlight ExEngine, an ongoing project that introduces a Python layer between device backends such as Micro-Manager and whatever drives them, whether a graphical interface, a script or an automated agent. A wrapper of this kind could record the exchange at the point where it passes, without a rewrite of existing infrastructure.</p>
+
+  <p>The authors recommend that the community begin recording workflow data now. Whichever AI architecture proves best, data quality is likely to remain the limit on what these systems can do.</p>
+
+  </div>
+
+  <div class="post-meta-box">
+    <h3 style="margin: 0%"><b>More information</b></h3>
+    <p style="margin: 0%;font-size:small;">Pinkard, H. &amp; Norlin, N. The missing data for intelligent scientific instruments. <em>Nat. Methods</em> <strong>23</strong>, 1671&ndash;1674 (2026). 
+    <a href="https://doi.org/10.1038/s41592-025-02995-7">https://doi.org/10.1038/s41592-025-02995-7</a></p>
+    <p style="margin: 0%;font-size:small;">More about the framework at <a href="https://exengine.readthedocs.io/en/latest/">ExEngine documentation</a></p>
+    <small>19-09-2026 | Press release</small>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      Maintained by <a href="mailto:a.ratessoriano@uu.nl" style="color:#666363;">Alfredo Rates</a>.
+      <br>
+      Hosted by the Cell Biology department of Utrecht University.
+    </div>
+
+    <div class="footer-right" style=text-align:right>
+      Check out more at <a href="smartmicroscopy.github.io" style="color:#666363;">smartmicroscopy.github.io</a>
+      <br>
+      smartmicroscopy.org is possible thanks to Euro-Bioimaging and <a href ="http://eurobioimaging.nl/" style="color:#666363;">NL-BioImaging</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
