@@ -110,5 +110,19 @@
     "category": "Press release",
     "image": "assets/images/2026-09-Expertise_that_leaves_with_the_operator_the_case_for_recording_instrument_workflows.png",
     "url": "posts/2026-09-Expertise_that_leaves_with_the_operator_the_case_for_recording_instrument_workflows"
+  },
+  {
+    "title": "iMicroscope: Autonomous Single Cell Analysis with Microwell Platform and Super Intelligence",
+    "date": "2026-09-24",
+    "category": "Press release",
+    "image": "assets/images/2026-09-autonomous-single-cell-analysis-with-microwell-platform-and-super-intelligence.jpg",
+    "url": "posts/2026-09-autonomous-single-cell-analysis-with-microwell-platform-and-super-intelligence"
+  },
+  {
+    "title": "From an imaging request to a reusable workflow: MicroClaw brings a language agent to the microscope",
+    "date": "2026-10-02",
+    "category": "Press release",
+    "image": "assets/images/2026-10-from-an-imaging-request-to-a-reusable-workflow-MicroClaw.jpg",
+    "url": "posts/2026-10-from-an-imaging-request-to-a-reusable-workflow-MicroClaw"
   }
 ]
